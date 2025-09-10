@@ -28,6 +28,7 @@ task_tracker/
 │── storage.py      # JSON persistence (save/load tasks)
 │── utils.py        # Helper functions (parsing, formatting)
 │── tasks.json      # Auto-generated file to store tasks
+│── test_tasks.py   # Unit tests for TaskManager
 ```
 
 ---
@@ -96,9 +97,19 @@ ID    Description                                   Status          CreatedAt   
 ---
 
 ## 🧪 Testing
-You can add unit tests for `TaskManager` using `pytest` or Python’s built-in `unittest`.
 
-Example (coming soon in `tests/` folder).
+Unit tests are included in **`test_tasks.py`**.  
+They cover task creation, updating, deleting, status changes, and listing.
+
+### Run tests with:
+```bash
+python -m unittest test_tasks.py
+```
+
+If you use **pytest**, you can also run:
+```bash
+pytest test_tasks.py
+```
 
 ---
 
